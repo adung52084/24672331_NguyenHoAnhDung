@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6c - Date Form</title>
+    <style>
+        body { font-family: serif; }
+        .form-container { width: 300px; margin: 20px; border-left: 1px solid #ccc; padding-left: 10px;}
+        .row { margin-bottom: 15px; }
+        .row label { display: block; margin-bottom: 5px; }
+        .row input[type="text"], .row input[type="date"] { width: 200px; padding: 3px; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <form action="#" method="post">
+        <div class="row">
+            <label>Name:</label>
+            <input type="text" name="name">
+        </div>
+        <div class="row">
+            <label>Telephone Number:</label>
+            <input type="text" name="phone">
+        </div>
+        <div class="row">
+            <label>Email:</label>
+            <input type="text" name="email">
+        </div>
+        <div class="row">
+            <label>Favorite Color:</label>
+            <!-- Sử dụng input type="color" -->
+            <input type="color" name="color" value="#0000ff"> 
+        </div>
+        <div class="row">
+            <label>Date of Birth:</label>
+            <!-- Sử dụng input type="date" -->
+            <input type="date" name="dob" value="2015-07-16">
+        </div>
+        
+        <div style="text-align: center; width: 200px; margin-top: 20px;">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6b - Contact Us Form</title>
+    <style>
+        body { font-family: serif; }
+        .form-container { width: 500px; margin: 20px; }
+        fieldset { margin-bottom: 15px; padding: 15px; }
+        .row { margin-bottom: 10px; display: flex; align-items: flex-start; }
+        .row label { width: 100px; }
+        .row input[type="text"], .row select { width: 200px; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Contact Us</h2>
+    
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Your message:</legend>
+            <div class="row">
+                <label>To</label>
+                <input type="text" name="to" value="Example Cafe" readonly>
+            </div>
+            <div class="row">
+                <label>Your email</label>
+                <input type="text" name="email">
+            </div>
+            <div class="row">
+                <label>Message</label>
+                <textarea name="message" rows="5" cols="40"></textarea>
+            </div>
+            <div class="row" style="align-items: center;">
+                <label>Attach File</label>
+                <input type="file" name="file">
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>How you found us:</legend>
+            <div class="row">
+                <label style="width: 150px;">How did you hear of us</label>
+                <select name="hearofus">
+                    <option value="google">Google</option>
+                    <option value="facebook">Facebook</option>
+                </select>
+            </div>
+            <div class="row">
+                <label style="width: 150px;">Newsletter</label>
+                <div>
+                    <input type="checkbox" name="newsletter" checked>
+                    Ensure this box is checked if you would like to receive email updates
+                </div>
+            </div>
+        </fieldset>
+
+        <input type="submit" value="Send message">
+    </form>
+</div>
+
+</body>
+</html>
