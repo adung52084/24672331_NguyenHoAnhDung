@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 6a - Registration Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .form-container { width: 600px; margin: 20px; }
+        .row { margin-bottom: 15px; display: flex; align-items: center; }
+        .row label { width: 150px; display: inline-block; }
+        .row input[type="text"], .row select { flex: 1; padding: 5px; }
+        fieldset { margin-bottom: 15px; }
+        .buttons { margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Jackson Electronics</h2>
+    <h3>Registration Form</h3>
+    <p>Register your Jackson Electronics product here</p>
+    
+    <form action="#" method="post">
+        <div class="row">
+            <label>First Name:</label>
+            <input type="text" name="firstname">
+            <label style="width: auto; margin-left: 20px;">Last Name:</label>
+            <input type="text" name="lastname">
+        </div>
+        <div class="row">
+            <label>Address #1:</label>
+            <input type="text" name="address1">
+        </div>
+        <div class="row">
+            <label>Address #2:</label>
+            <input type="text" name="address2">
+        </div>
+        <div class="row">
+            <label>City:</label>
+            <input type="text" name="city">
+            <label style="width: auto; margin-left: 20px;">State:</label>
+            <input type="text" name="state" size="5">
+            <label style="width: auto; margin-left: 20px;">Zip:</label>
+            <input type="text" name="zip" size="10">
+        </div>
+        <div class="row">
+            <label>Country:</label>
+            <select name="country">
+                <option value="us">United States</option>
+                <option value="vn">Vietnam</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>Product:</label>
+            <select name="product">
+                <option value="scanmaster">ScanMaster</option>
+            </select>
+        </div>
+        <div class="row">
+            <label>Date Purchased:</label>
+            <input type="text" name="datepurchased">
+        </div>
+        <div class="row">
+            <label>Serial #:</label>
+            <input type="text" name="serial">
+        </div>
+
+        <fieldset>
+            <legend>Used for:</legend>
+            <input type="radio" name="usedfor" value="home" checked> Home
+            <input type="radio" name="usedfor" value="business"> Business
+            <input type="radio" name="usedfor" value="government"> Government
+            <input type="radio" name="usedfor" value="education"> Educational Institution
+            <input type="radio" name="usedfor" value="other"> Other
+        </fieldset>
+
+        <fieldset>
+            <legend>System (check all that apply):</legend>
+            <input type="checkbox" name="system" value="windows"> Windows
+            <input type="checkbox" name="system" value="unix"> UNIX
+            <input type="checkbox" name="system" value="mac"> Macintosh
+            <input type="checkbox" name="system" value="other"> Other
+        </fieldset>
+
+        <div>
+            <label style="vertical-align: top;">Comments?</label><br>
+            <textarea name="comments" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="buttons">
+            <input type="submit" value="Click to register">
+            <input type="reset" value="Click to cancel">
+        </div>
+    </form>
+</div>
+
+</body>
+</html>
